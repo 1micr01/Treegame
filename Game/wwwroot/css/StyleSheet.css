@@ -1,0 +1,51 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+#cookie{
+    display: block;
+    background-position: center;
+    background-color: transparent;
+    
+    margin: 0 auto;
+}
+
+.Main{
+    height: 100%;
+    width: 100%;
+}
+
+#cookie:active{
+    transform: translateY(2px);
+    
+}
+
+.Container{
+    text-align: center;
+    
+}
+
+.UpgradeCon{
+    text-align: right;
+}
+
+#counter{
+    font-size: 28px;
+    margin: 20px 50px;
+    display: block;
+    color: white
+}
+
+.button{
+    display: block;
+    background-color: white;
+    border-radius: 5px;
+    width: 100px;
+}
+
+html, body{
+    background-color: midnightblue;
+    height: 100%;
+    width: 100%;
+}

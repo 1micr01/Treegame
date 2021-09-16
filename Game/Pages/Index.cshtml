@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="Main">
+    <div class="Container">
+        <div style="display: inline-flex; justify-content: right;"><label id="counter">0</label></div>
+    </div>
+    <div class="Container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <div style="display: inline-flex; justify-content: center;"><img src="~/Image/sapling.webp" id="cookie" type="button" onclick="addCookie()" /></div>
+    </div>
+    <div class="UpgradeCon">
+        <div style="display: inline-flex;">
+            <button class="button" id="autoClick" type="button" onclick="addAuto()">Clickers <span id="clickersCost">15</span> [<span id="autoClickers">0</span>]</button>
+            <button class="button" id="powerClick" type="button" onclick="addPower()">Power <span id="powerCost">5</span> [<span id="powers">0</span>]</button>
+        </div>
+    </div>
+</div>
