@@ -12,6 +12,9 @@
 .Main{
     height: 100%;
     width: 100%;
+    background-image: url("/Image/gamebackground.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #cookie:active{
@@ -21,7 +24,13 @@
 
 .Container{
     text-align: center;
-    
+}
+
+#img{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
 }
 
 .dropdown {
@@ -30,6 +39,7 @@
     height: 400px;
     background-color: magenta;
     display: none;
+    position: fixed;
 }
 
 #counter{
@@ -55,6 +65,7 @@ table{
     justify-content: left;
     align-items: center;
     width: 100%;
+    color: white;
 }
 
 .upgradeImg{
@@ -85,7 +96,6 @@ ul {
 }
 
 body{
-    background-color: midnightblue;
     height: 100%;
     width: 100%;
     display: flex;
@@ -104,7 +114,7 @@ body{
     height: 50px;
     width: 100%;
     background-color: blueviolet;
-    bottom: 0;
+    position: fixed;
 }
 
 ul{
