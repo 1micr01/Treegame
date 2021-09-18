@@ -26,17 +26,12 @@ function addCookie() {
 }
 
 function Dropdown() {
-    dropdowns.style.visibility = "visible";
-    dropdowns.style.zIndex = "1";
-    dropdowns.style.opacity = "1";
+    dropdowns.style.display = "block";
 }
 
 document.addEventListener("mouseup", function(e){
     if (!dropdowns.contains(e.target)) {
-        dropdowns.style.visibility = "hidden";
-        dropdowns.style.zIndex = "0";
-        dropdowns.style.opacity = "0";
-        dropdowns.style.transition = "visibility 0s, opacity 0.2s linear";
+        dropdowns.style.display = "none";
     }
 })
 

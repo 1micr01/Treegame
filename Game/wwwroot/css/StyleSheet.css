@@ -6,7 +6,6 @@
 #cookie{
     display: block;
     background-position: center;
-    background-color: green;
     margin: 0 auto;
 }
 
@@ -30,10 +29,7 @@
     width: 200px;
     height: 400px;
     background-color: magenta;
-    visibility: 0;
-    z-index: 0;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
+    display: none;
 }
 
 #counter{
@@ -92,6 +88,9 @@ body{
     background-color: midnightblue;
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
 .footer {
