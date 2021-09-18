@@ -10,6 +10,9 @@ let height = 182
 var px = "px";
 let widthAdded = "132px";
 let heightAdded = "182px";
+let dropdowns = document.getElementById("dropdown");
+let shown;
+
 
 function addCookie() {
     cookies += power;
@@ -22,12 +25,26 @@ function addCookie() {
     cookie.style.width = widthAdded.concat(px);
 }
 
+function Dropdown() {
+    dropdowns.style.visibility = "visible";
+    dropdowns.style.zIndex = "1";
+    dropdowns.style.opacity = "1";
+}
+
+document.addEventListener("mouseup", function(e){
+    if (!dropdowns.contains(e.target)) {
+        dropdowns.style.visibility = "hidden";
+        dropdowns.style.zIndex = "0";
+        dropdowns.style.opacity = "0";
+        dropdowns.style.transition = "visibility 0s, opacity 0.2s linear";
+    }
+})
+
 function addAuto() {
     if (cookies >= clickerCost) {
         cookies -= clickerCost;
         autoClicks++;
         clickerCost = Math.round(clickerCost * 1.25);
-
         counter.innerHTML = cookies;
         document.getElementById("clickersCost").innerHTML = clickerCost;
         document.getElementById("autoClickers").innerHTML = autoClicks;
