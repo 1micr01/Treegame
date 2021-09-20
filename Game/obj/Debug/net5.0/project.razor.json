@@ -15617,6 +15617,42 @@
     "CSharpLanguageVersion": 900
   },
   "RootNamespace": "Game",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\elias\\OneDrive\\Documents\\GitHub\\TreeGrower\\Game\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\elias\\OneDrive\\Documents\\GitHub\\TreeGrower\\Game\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\elias\\OneDrive\\Documents\\GitHub\\TreeGrower\\Game\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\elias\\OneDrive\\Documents\\GitHub\\TreeGrower\\Game\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\elias\\OneDrive\\Documents\\GitHub\\TreeGrower\\Game\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\elias\\OneDrive\\Documents\\GitHub\\TreeGrower\\Game\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\elias\\OneDrive\\Documents\\GitHub\\TreeGrower\\Game\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

@@ -11,7 +11,8 @@ var px = "px";
 let widthAdded = "132px";
 let heightAdded = "182px";
 let dropdowns = document.getElementById("dropdown");
-let shown;
+let autoValue = 1;
+let autoValueCost = 100;
 
 
 function addCookie() {
@@ -58,12 +59,23 @@ function addPower() {
     }
 }
 
+function IncAutoValue() {
+    if (cookies >= autoValueCost){
+        cookies -= autoValueCost;
+        autoValue++;
+        autoValueCost = Math.round(autoValueCost * 8.25);
+        counter.innerHTML = cookies;
+        document.getElementById("incAutoCost").innerHTML = autoValueCost;
+        document.getElementById("autoValue").innerHTML = autoValue -1;
+    }
+}
+
 function timer() {
-    cookies += autoClicks;
+    cookies += autoClicks * autoValue;
     counter.innerHTML = cookies;
 }
 
-setInterval(timer, 10000)
+setInterval(timer, 1000)
 
 
 
